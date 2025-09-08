@@ -85,11 +85,11 @@ frontend/src/
 ### Preview
 
 - Upload Page
-  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323318/Screenshot_2025-09-08_145039_kr2zr1.png" alt="upload page">
+  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323318/Screenshot_2025-09-08_145039_kr2zr1.png" alt="upload page" width="600">
 - Resume History
-  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323723/Screenshot_2025-09-08_145807_jajhq0.png" alt="resume history">
+  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323723/Screenshot_2025-09-08_145807_jajhq0.png" alt="resume history" width="600">
 - Resume Analysis Details
-  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323360/Screenshot_2025-09-08_145222_nhdwbh.png" alt="resume analysis">
+  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323360/Screenshot_2025-09-08_145222_nhdwbh.png" alt="resume analysis" width="600">
 
 ---
 
