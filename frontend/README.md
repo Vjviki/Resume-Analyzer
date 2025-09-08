@@ -76,7 +76,7 @@ frontend/src/
     ├── ResumeUploader.js # File input and upload button
     ├── ResumeUploader.css   
     ├── ResumeDetails.js  # Component to display the full analysis
-    ├── ResumeDetails.js  
+    ├── ResumeDetails.css  
     ├── PastResumesTable.js # Table for historical data
     ├── PastResumesTable.css 
     └── App.js              # Main component with tabbing logic
