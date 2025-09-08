@@ -1,6 +1,6 @@
 # Resume Analyzer
 
-<img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323280/Screenshot_2025-09-08_144911_cb0m7o.png" alt="preview" width="400">
+<img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323280/Screenshot_2025-09-08_144911_cb0m7o.png" alt="preview" width="600">
 
 Resume Analyzer is a full-stack web application that helps users upload resumes and get AI-powered insights.  
 It extracts key details, rates resumes, suggests improvements, and recommends skills to enhance career growth.
