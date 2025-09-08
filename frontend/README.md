@@ -87,10 +87,10 @@ frontend/src/
 - Upload Page<br>
   <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323318/Screenshot_2025-09-08_145039_kr2zr1.png" alt="upload page" style="width:80%; max-width:600px;">
 
-- Resume History
+- Resume History<br>
   <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323723/Screenshot_2025-09-08_145807_jajhq0.png" alt="resume history" style="width:80%; max-width:600px;">
 
-- Resume Analysis Details
+- Resume Analysis Details<br>
   <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323360/Screenshot_2025-09-08_145222_nhdwbh.png" alt="resume analysis" style="width:80%; max-width:600px;">
 
 
