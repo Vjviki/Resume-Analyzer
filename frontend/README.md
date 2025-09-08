@@ -1,6 +1,6 @@
 # Resume Analyzer
 
-<img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323280/Screenshot_2025-09-08_144911_cb0m7o.png" alt="preview">
+<img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323280/Screenshot_2025-09-08_144911_cb0m7o.png" alt="preview" width="600">
 
 Resume Analyzer is a full-stack web application that helps users upload resumes and get AI-powered insights.  
 It extracts key details, rates resumes, suggests improvements, and recommends skills to enhance career growth.
@@ -76,7 +76,7 @@ frontend/src/
     ├── ResumeUploader.js # File input and upload button
     ├── ResumeUploader.css   
     ├── ResumeDetails.js  # Component to display the full analysis
-    ├── ResumeDetails.js  
+    ├── ResumeDetails.css  
     ├── PastResumesTable.js # Table for historical data
     ├── PastResumesTable.css 
     └── App.js              # Main component with tabbing logic
@@ -84,12 +84,15 @@ frontend/src/
 
 ### Preview
 
-- Upload Page
-  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323318/Screenshot_2025-09-08_145039_kr2zr1.png" alt="upload page">
-- Resume History
-  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323723/Screenshot_2025-09-08_145807_jajhq0.png" alt="upload page">
-- Resume Analysis Details
-  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757321084/Screenshot_2025-09-08_141100_ggi4xb.png" alt="upload page">
+- Upload Page<br>
+  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323318/Screenshot_2025-09-08_145039_kr2zr1.png" alt="upload page" style="width:80%; max-width:600px;">
+
+- Resume History<br>
+  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323723/Screenshot_2025-09-08_145807_jajhq0.png" alt="resume history" style="width:80%; max-width:600px;">
+
+- Resume Analysis Details<br>
+  <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323360/Screenshot_2025-09-08_145222_nhdwbh.png" alt="resume analysis" style="width:80%; max-width:600px;">
+
 
 ---
 
