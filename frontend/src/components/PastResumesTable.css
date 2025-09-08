@@ -1,0 +1,186 @@
+.historical-viewer {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card-header h2 {
+    font-size: 1rem;
+  }
+}
+
+.card-content {
+  font-size: 0.9rem;
+}
+
+.no-history {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.large-icon {
+  font-size: 50px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* -------- TABLE (desktop view) -------- */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.history-table th {
+  background-color: #f5f5f5;
+}
+
+.file-cell,
+.date-cell,
+.rating-cell,
+.skills-cell,
+.actions-cell {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon-small {
+  width: 16px;
+  height: 16px;
+}
+
+.btn {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: 1px solid #888;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* -------- RESPONSIVE (Mobile: stacked cards) -------- */
+@media screen and (max-width: 768px) {
+  .history-table,
+  .history-table thead,
+  .history-table tbody,
+  .history-table th,
+  .history-table td,
+  .history-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .history-table thead {
+    display: none; /* hide headers */
+  }
+
+  .history-table tr {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    padding: 12px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .history-table td {
+    border: none;
+    padding: 5px 0;
+  }
+
+  /* Add labels for clarity */
+  .history-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 8px;
+    display: inline-block;
+    min-width: 120px;
+    color: #333;
+  }
+
+  /* File name & rating look nicer stacked */
+  .file-cell,
+  .date-cell,
+  .rating-cell,
+  .skills-cell,
+  .actions-cell {
+    justify-content: flex-start;
+  }
+}
+
+/* -------- MODAL -------- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}

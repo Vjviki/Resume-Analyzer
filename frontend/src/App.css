@@ -1,0 +1,134 @@
+/* App container */
+.app {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f5f5f5, #e0e0ff, #d0f0ff);
+  font-family: Arial, sans-serif;
+}
+
+/* Inner container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon-wrapper {
+  padding: 8px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #6a5acd, #00bfff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-wrapper {
+    padding: 0px;
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: black;
+}
+
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+.main-title {
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #6a5acd, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 28px;
+  }
+  
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #555555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Main content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Section */
+.section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Section header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.tab-btn.active {
+  background: #4a90e2;
+  color: white;
+  border-color: #4a90e2;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
