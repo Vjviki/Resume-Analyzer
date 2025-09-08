@@ -84,7 +84,7 @@ frontend/src/
 
 ### Preview
 
-- Upload Page
+- Upload Page<br>
   <img src="https://res.cloudinary.com/df73pocxs/image/upload/v1757323318/Screenshot_2025-09-08_145039_kr2zr1.png" alt="upload page" style="width:80%; max-width:600px;">
 
 - Resume History
