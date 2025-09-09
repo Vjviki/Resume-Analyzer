@@ -20,9 +20,9 @@ It extracts key details, rates resumes, suggests improvements, and recommends sk
 
 ## Tech Stack
 
-- **Frontend:** React.js
-- **Backend:** Node.js with Express.js
-- **Database:** PostgreSQL (or any other SQL database)
+- **Frontend:** React + Netlify
+- **Backend:** Node.js + Express + PostgreSQL (hosted on Render)
+- **Database:** PostgreSQL (cloud-hosted on Render)
 - **API Style:** REST API
 - **LLM Integration:** Google Gemini API via `@google/generative-ai` SDK
 - **PDF Parsing:** `pdf-parse` or a similar Node.js library
@@ -39,6 +39,14 @@ It extracts key details, rates resumes, suggests improvements, and recommends sk
   > “You are an expert technical recruiter and career coach. Analyze the resume text and return a strict JSON object. JSON only—no extra text.”
 
   > If you used a different model, just set `MODEL_NAME` accordingly (e.g., `gpt-4.1`, `gpt-3.5-turbo`, etc.).
+
+---
+
+### Deployment
+
+- **Backend**: Render
+
+- **Frontend**: Netlify
 
 ---
 
