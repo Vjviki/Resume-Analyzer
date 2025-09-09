@@ -52,17 +52,19 @@ exports.uploadResume = async (req, res) => {
 // Get all resumes
 exports.getAllResumes = async (req, res) => {
   try {
-    const result = await pool.query("SELECT * FROM resumes ORDER BY uploaded_at DESC");
+    const result = await pool.query(
+      "SELECT * FROM resumes ORDER BY uploaded_at DESC"
+    );
     const resumes = result.rows.map((row) => ({
       ...row,
-      work_experience: row.work_experience ? JSON.parse(row.work_experience) : [],
-      education: row.education ? JSON.parse(row.education) : [],
-      technical_skills: row.technical_skills ? JSON.parse(row.technical_skills) : [],
-      soft_skills: row.soft_skills ? JSON.parse(row.soft_skills) : [],
-      projects: row.projects ? JSON.parse(row.projects) : [],
-      certifications: row.certifications ? JSON.parse(row.certifications) : [],
-      improvement_areas: row.improvement_areas ? JSON.parse(row.improvement_areas) : [],
-      upskill_suggestions: row.upskill_suggestions ? JSON.parse(row.upskill_suggestions) : [],
+      work_experience: row.work_experience || [],
+      education: row.education || [],
+      technical_skills: row.technical_skills || [],
+      soft_skills: row.soft_skills || [],
+      projects: row.projects || [],
+      certifications: row.certifications || [],
+      improvement_areas: row.improvement_areas || [],
+      upskill_suggestions: row.upskill_suggestions || [],
     }));
     res.json(resumes);
   } catch (err) {
@@ -75,21 +77,23 @@ exports.getAllResumes = async (req, res) => {
 exports.getResumeById = async (req, res) => {
   const { id } = req.params;
   try {
-    const result = await pool.query("SELECT * FROM resumes WHERE id = $1", [id]);
+    const result = await pool.query("SELECT * FROM resumes WHERE id = $1", [
+      id,
+    ]);
     if (result.rows.length === 0)
       return res.status(404).json({ error: "Resume not found" });
 
     const row = result.rows[0];
     const resume = {
       ...row,
-      work_experience: row.work_experience ? JSON.parse(row.work_experience) : [],
-      education: row.education ? JSON.parse(row.education) : [],
-      technical_skills: row.technical_skills ? JSON.parse(row.technical_skills) : [],
-      soft_skills: row.soft_skills ? JSON.parse(row.soft_skills) : [],
-      projects: row.projects ? JSON.parse(row.projects) : [],
-      certifications: row.certifications ? JSON.parse(row.certifications) : [],
-      improvement_areas: row.improvement_areas ? JSON.parse(row.improvement_areas) : [],
-      upskill_suggestions: row.upskill_suggestions ? JSON.parse(row.upskill_suggestions) : [],
+      work_experience: row.work_experience || [],
+      education: row.education || [],
+      technical_skills: row.technical_skills || [],
+      soft_skills: row.soft_skills || [],
+      projects: row.projects || [],
+      certifications: row.certifications || [],
+      improvement_areas: row.improvement_areas || [],
+      upskill_suggestions: row.upskill_suggestions || [],
     };
     res.json(resume);
   } catch (err) {
