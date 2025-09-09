@@ -65,8 +65,9 @@ const ResumeUploader = () => {
       const formData = new FormData();
       formData.append("resume", file);
 
+      const API_URL = process.env.REACT_APP_API_URL;
       // Upload to backend
-      const response = await fetch("http://localhost:5000/api/resumes/upload", {
+      const response = await fetch(`${API_URL}/api/resumes/upload`, {
         method: "POST",
         body: formData,
       });
