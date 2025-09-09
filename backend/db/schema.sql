@@ -1,0 +1,21 @@
+CREATE TABLE resumes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    file_name TEXT NOT NULL,
+    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    name TEXT,
+    email TEXT,
+    phone TEXT,
+    linkedin_url TEXT,
+    portfolio_url TEXT,
+    summary TEXT,
+    work_experience TEXT,
+    education TEXT,
+    technical_skills TEXT,
+    soft_skills TEXT,
+    projects TEXT,
+    certifications TEXT,
+    resume_rating INTEGER,
+    improvement_areas TEXT,
+    upskill_suggestions TEXT
+  );
+CREATE TABLE sqlite_sequence(name,seq);
