@@ -41,7 +41,8 @@ export const PastResumesTable = () => {
   useEffect(() => {
     const fetchResumes = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/resumes");
+         const API_URL = process.env.REACT_APP_API_URL;
+        const response = await fetch(`${API_URL}/api/resumes`);
         const data = await response.json();
         const formatted = data.map((resume) => formatData(resume));
         setResumeHistory(formatted);
