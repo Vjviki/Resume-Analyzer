@@ -5,9 +5,9 @@ const resumeRoutes = require("./routes/resumeRoutes");
 
 const app = express();
 
-// Allow your frontend domain
+
 app.use(cors({
-  origin: "https://airesumelab.netlify.app", // <-- frontend URL
+  origin: "https://airesumelab.netlify.app", 
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"],
 }));
